@@ -1,0 +1,15 @@
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\bin\Debug\net8.0\SimpleElectronicsShop.exe
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\bin\Debug\net8.0\SimpleElectronicsShop.deps.json
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\bin\Debug\net8.0\SimpleElectronicsShop.runtimeconfig.json
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\bin\Debug\net8.0\SimpleElectronicsShop.dll
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\bin\Debug\net8.0\SimpleElectronicsShop.pdb
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.AssemblyInfoInputs.cache
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.AssemblyInfo.cs
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.csproj.CoreCompileInputs.cache
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.sourcelink.json
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.dll
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\refint\SimpleElectronicsShop.dll
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.pdb
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\SimpleElectronicsShop.genruntimeconfig.cache
+D:\First-CS-Project\SimpleElectronicsShop\SimpleElectronicsShop\obj\Debug\net8.0\ref\SimpleElectronicsShop.dll
