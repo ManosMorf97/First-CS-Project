@@ -1,22 +1,21 @@
 ﻿namespace class_product
 {
-	public abstract class Product(int price, string name_title)
+	public abstract class Product(int year,float price)
     {
-		private readonly int price=price;
-		private readonly string name_title=name_title;
+		private readonly float price=price;
+		private readonly int year = year;
 
-		public int Price
+		public float Price
 		{
 			get { return price; }
 		}
-		public string Name_Title
-		{
-			get { return name_title; }
+		public int Year {
+			get { return year; }
 		}
 		public override string ToString()
 		{
 
-			return "name: " + name_title + "\n" + "price: " + price;
+			return "year: " + year + "\n" + "price: " + price+"\n";
 		}
 
 	}
