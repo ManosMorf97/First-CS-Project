@@ -1,6 +1,6 @@
 ﻿namespace class_product
 {
-	public class Product(int price, string name_title)
+	public abstract class Product(int price, string name_title)
     {
 		private readonly int price=price;
 		private readonly string name_title=name_title;
