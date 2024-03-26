@@ -17,7 +17,7 @@ namespace sub_products
 			get { return genres; }
 		}
 
-		public String Title {
+		public string Title {
 		get{ return title; } 
 		}
 		public override string ToString() {
@@ -25,7 +25,7 @@ namespace sub_products
 				+"ratings_from_imdb: "+ratings_from_imdb+"\n"+
 				"genres: "+String.Join(",",genres)+"\n";
 		}
-	}
+    }
 
 	public class DeviceProduct(string name, float price, int year, float ram, string constructor_type, string graphics_card) :
 		Product(year, price)
@@ -35,7 +35,7 @@ namespace sub_products
 		private readonly string constructor_type=constructor_type;
 		private readonly string graphics_card = graphics_card;
 
-		public String Name
+		public string Name
 		{
 			get { return name; }		
 		}
@@ -52,7 +52,7 @@ namespace sub_products
 			get { return graphics_card; }		
 		}
 
-		public override String ToString()
+		public override string ToString()
 		{
             return "name: " + name + "\n"+
 				base.ToString()+
@@ -60,10 +60,6 @@ namespace sub_products
                 "constructor_type: " + constructor_type + "\n"+
 				"graphics_card: " +graphics_card+"\n";
         }
-
-
-
-	
-	}
+    }
 }
 

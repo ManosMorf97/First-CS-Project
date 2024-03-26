@@ -17,6 +17,5 @@
 
 			return "price: " + price+"\n"+"year: " + year + "\n";
 		}
-
-	}
+    }
 }
