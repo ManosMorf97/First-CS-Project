@@ -21,7 +21,7 @@ namespace sub_products
 		get{ return title; } 
 		}
 		public override string ToString() {
-			return "title: "+title+"\n"+"year: "+base.Year+"\n"
+			return "title: "+title+"\n"+base.ToString()
 				+"ratings_from_imdb: "+ratings_from_imdb+"\n"+
 				"genres: "+String.Join(",",genres)+"\n";
 		}
@@ -54,7 +54,8 @@ namespace sub_products
 
 		public override String ToString()
 		{
-            return "name: " + name + "\n" + "year: " + base.Year + "\n"+
+            return "name: " + name + "\n"+
+				base.ToString()+
                 "RAM: " + ram + "\n" +
                 "constructor_type: " + constructor_type + "\n"+
 				"graphics_card: " +graphics_card+"\n";

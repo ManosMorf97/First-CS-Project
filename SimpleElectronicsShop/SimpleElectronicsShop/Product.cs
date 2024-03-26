@@ -15,7 +15,7 @@
 		public override string ToString()
 		{
 
-			return "year: " + year + "\n" + "price: " + price+"\n";
+			return "price: " + price+"\n"+"year: " + year + "\n";
 		}
 
 	}
