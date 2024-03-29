@@ -35,7 +35,7 @@ namespace cd_products
         public string Console { get { return console; } }
 
         public override string ToString() {
-            return base.ToString()+"\n"+"console: "+console+"\n";
+            return base.ToString()+"console: "+console+"\n";
         }
 
         public override bool Equals(object? obj)

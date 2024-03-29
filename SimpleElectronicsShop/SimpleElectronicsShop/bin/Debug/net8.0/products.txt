@@ -1,0 +1,96 @@
+Type: cd_products.Movie
+title: Terminator
+price: 5
+year: 1984
+ratings_from_imdb: 8,1
+genres: action,horror,science fiction
+length: 107
+
+Type: cd_products.Movie
+title: Titanic
+price: 4
+year: 1997
+ratings_from_imdb: 7,9
+genres: action,horror,science fiction
+length: 107
+
+Type: cd_products.Movie
+title: Last of the Mochicans
+price: 5
+year: 1992
+ratings_from_imdb: 7,7
+genres: action,horror,science fiction
+length: 107
+
+Type: cd_products.Game
+title: Tekken 6
+price: 15
+year: 2007
+ratings_from_imdb: 7,4
+genres: fighting
+console: PS3
+
+Type: cd_products.Game
+title: Tekken 6
+price: 15
+year: 2007
+ratings_from_imdb: 7,4
+genres: fighting
+console: XBOX-360
+
+Type: cd_products.Game
+title: Tekken 5
+price: 10
+year: 2004
+ratings_from_imdb: 8,1
+genres: fighting
+console: PS2
+
+Type: device_products.Mobile_Phone
+name: XPERIA Z4
+price: 200
+year: 2015
+RAM: 3
+constructor_type: Sony
+graphics_card: Qualcomm Adreno
+
+Type: device_products.Mobile_Phone
+name: OnePlus 12
+price: 181
+year: 2014
+RAM: 12
+constructor_type: OnePlus
+graphics_card: Adreno
+
+Type: device_products.Mobile_Phone
+name: XPERIA X10 Mini Pro
+price: 120
+year: 2010
+RAM: 8
+constructor_type: Sony
+graphics_card: Qualcomm
+
+Type: device_products.Gaming_Console
+name: PS3
+price: 350
+year: 2006
+RAM: 0,25
+constructor_type: Sony
+graphics_card: NVIDIA
+
+Type: device_products.Gaming_Console
+name: XBOX-360
+price: 350
+year: 2005
+RAM: 0,5
+constructor_type: Microsoft
+graphics_card: ATI
+
+Type: device_products.Gaming_Console
+name: PS2
+price: 240,6
+year: 2000
+RAM: 0,03125
+constructor_type: Sony
+graphics_card: Sony
+

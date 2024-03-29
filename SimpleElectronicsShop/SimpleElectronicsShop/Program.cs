@@ -2,10 +2,6 @@
 using cd_products;
 using class_product;
 using device_products;
-using sub_products;
-using System.IO;
-using System.Runtime.InteropServices;
-//StreamWriter product_file = new StreamWriter("products.txt");
 Product[,] products= new Product[4, 3];
 string [] movie_name = ["Terminator", "Titanic", "Last of the Mochicans"];
 string[][] movie_genres = [["action","horror","science fiction"], ["action","horror","romance"], ["action","history","war"]];
@@ -13,9 +9,7 @@ int[,] year = { {1984, 1997, 1992}, {2007, 2007, 2004},{ 2015, 2014, 2010 },{ 20
 string[] game_genres = ["fighting"];
 string[] game_name = ["Tekken 6", "Tekken 6", "Tekken 5"];
 string[] console_name = ["PS3", "XBOX-360", "PS2"];
-float[,] price = { {(float)5, (float)4, (float)5}, {(float)15, (float)15, (float)10},
-    {(float)200,(float)181,(float)120} };
-Console.WriteLine(price[2, 2]);
+float[,] price = { {5,4,5}, {15,15,10},{200,181,120},{350,350,(float)240.6 } };
 float[] game_ratings = [(float)7.4, (float)7.4, (float)8.1];
 float[] movie_ratings = [(float)8.1, (float)7.9, (float)7.7];
 int[] length = [107, 195, 112];
@@ -37,3 +31,18 @@ for (int i = 0; i < 3; i++)
 for (int i = 0; i < 3; i++)
     products[3, i] = new Gaming_Console(console_name[i], price[3, i], year[3, i], console_ram[i],
         console_constructor[i], console_graphics_card[i]);
+StreamWriter product_file = new("products.txt");
+try
+{
+    foreach (Product product in products)
+    {
+        product_file.WriteLine("Type: " + product.GetType());
+        product_file.Write(product+"\n");
+    }
+    product_file.Close();
+    Console.WriteLine("The products have been writen to file");
+}
+catch(Exception e)
+{
+    Console.WriteLine(e.ToString());
+}
