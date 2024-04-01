@@ -93,4 +93,3 @@ year: 2000
 RAM: 0,03125
 constructor_type: Sony
 graphics_card: Sony
-
