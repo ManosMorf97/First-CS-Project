@@ -96,6 +96,7 @@ namespace buyer_
                 if (selected_number == -1)
                     break;
             }
+            Console.WriteLine("bye");
 
 
         }
