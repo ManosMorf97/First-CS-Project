@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using sub_products;
 using cd_products;
 using class_product;
 using device_products;
@@ -10,13 +10,14 @@ namespace buyer_
         {
             List<Product> products = GetProducts("products.txt");
             List<Product> buyer_products = new List<Product>();
-            float total_money = (float)0.0;
             string answer;
+            Console.WriteLine("All products");
+            Console.WriteLine(products.OrderBy(p => p.Price).ToList());
             do
             {
                 Console.WriteLine("Anything that needs to add to chart yes or no?");
                 answer = Console.ReadLine();
-            } while (answer.ToLower() != "no" && answer.ToLower() != "yes");
+            } while (answer!=null && answer.ToLower() != "no" && answer.ToLower() != "yes");
             while (answer.ToLower() != "no") {
                 Console.WriteLine("Product Type?");
                 string type = Console.ReadLine();
@@ -33,8 +34,8 @@ namespace buyer_
                     Console.WriteLine("Title?");
                     title = Console.ReadLine();
                 }
-                else if (type == "Game?") {
-                    Console.WriteLine("Title");
+                else if (type == "Game") {
+                    Console.WriteLine("Title?");
                     title = Console.ReadLine();
                     Console.WriteLine("Console?");
                     console = Console.ReadLine();
@@ -46,13 +47,51 @@ namespace buyer_
                 }
                 if (name != "")
                 {
-
+                    buyer_products.Add(products.Where(p =>p.GetType().ToString() == type && ((DeviceProduct)p).Name == name).ToList()[0]);
                 }
-                else { 
-                
+                else {
+                    if (console == "") {
+                        buyer_products.Add(products.Where(p => p.GetType().ToString() == type && ((Movie)p).Title== name).ToList()[0]);
+
+                    }
+                    else
+                    {
+                        buyer_products.Add(products.Where(p => p.GetType().ToString() == type && ((Game)p).Title == name && 
+                        ((Game)p).Console == console).ToList()[0]);
+
+                    }
                 
                 }
+                Console.WriteLine("All products");
+                Console.WriteLine(products.OrderBy(p => p.Price).ToList());
+                do
+                {
+                    Console.WriteLine("Anything that needs to add to chart yes or no?");
+                    answer = Console.ReadLine();
+                } while (answer != null && answer.ToLower() != "no" && answer.ToLower() != "yes");
+            }
+            while (true)
+            {
+                if (buyer_products.Count == 0)
+                    break;
+                Console.WriteLine("Total Money:" + buyer_products.Sum(p => p.Price));
+                buyer_products = buyer_products.OrderBy(p => p.Price).ToList();
 
+                Console.WriteLine("Type the number of a product you want to remove.IF not type enter");
+                for (int i = 0; i < buyer_products.Count; i++)
+                    Console.WriteLine("Number: " + i + "\n" + buyer_products[i]);
+                int selected_number;
+                try
+                {
+                    selected_number = Convert.ToInt32(Console.ReadLine());
+                    buyer_products.RemoveAt(selected_number);
+                }
+                catch (Exception)
+                {
+                    selected_number = -1;
+                }
+                if (selected_number != -1)
+                    break;
             }
 
 
