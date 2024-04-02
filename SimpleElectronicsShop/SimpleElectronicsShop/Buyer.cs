@@ -12,7 +12,8 @@ namespace buyer_
             List<Product> buyer_products = new List<Product>();
             string answer;
             Console.WriteLine("All products");
-            Console.WriteLine(products.OrderBy(p => p.Price).ToList());
+            foreach (Product product in products.OrderBy(p => p.Price).ToList())
+                Console.WriteLine(product);
             do
             {
                 Console.WriteLine("Anything that needs to add to chart yes or no?");
@@ -47,23 +48,25 @@ namespace buyer_
                 }
                 if (name != "")
                 {
-                    buyer_products.Add(products.Where(p =>p.GetType().ToString() == type && ((DeviceProduct)p).Name == name).ToList()[0]);
+                    buyer_products.Add(products.Where(p =>p.GetType().Name == type && ((DeviceProduct)p).Name == name).ToList()[0]);
                 }
                 else {
                     if (console == "") {
-                        buyer_products.Add(products.Where(p => p.GetType().ToString() == type && ((Movie)p).Title== name).ToList()[0]);
+                        buyer_products.Add(products.Where(p => p.GetType().Name == type && ((Movie)p).Title== title).ToList()[0]);
 
                     }
                     else
                     {
-                        buyer_products.Add(products.Where(p => p.GetType().ToString() == type && ((Game)p).Title == name && 
+
+                        buyer_products.Add(products.Where(p => p.GetType().Name == type && ((Game)p).Title == title && 
                         ((Game)p).Console == console).ToList()[0]);
 
                     }
                 
                 }
                 Console.WriteLine("All products");
-                Console.WriteLine(products.OrderBy(p => p.Price).ToList());
+                foreach (Product product in products.OrderBy(p => p.Price).ToList())
+                    Console.WriteLine(product);
                 do
                 {
                     Console.WriteLine("Anything that needs to add to chart yes or no?");
@@ -90,7 +93,7 @@ namespace buyer_
                 {
                     selected_number = -1;
                 }
-                if (selected_number != -1)
+                if (selected_number == -1)
                     break;
             }
 
@@ -112,7 +115,7 @@ namespace buyer_
                     string line = product_file.ReadLine();
                     while (line != "")
                     {
-                        attributes.Add(line.Substring(0, line.IndexOf(':')), line.Substring(line.IndexOf(": ") + 1));
+                        attributes.Add(line.Substring(0, line.IndexOf(':')), line.Substring(line.IndexOf(": ") + 2));
                         line = product_file.ReadLine();
                     }
                     //create items to list
