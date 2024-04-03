@@ -23,4 +23,4 @@ After buying all the things, they have to decide if they want to remove any of t
 1) Program.cs was top-level file, but not anymore. &nbsp; <br>
 2) Program.cs acted like a script code because of the above. &nbsp; <br>
 3) The Buyer.cs file has the main method. &nbsp; <br>
-4) The aim was to understand what happened with top-level-files on C#. &nbsp; <br>
+4) The above used was to understand what happened with top-level-files on C#. &nbsp; <br>
