@@ -15,3 +15,4 @@ Product class in an abstract class. &nbsp; <br>
 DeviceProduct and CD_Product inherit the Product class. &nbsp; <br>
 Movie and Game classes inherit the CD_Product. &nbsp; <br>
 Mobile_Phone and Caming_Console inherit the DeviceProduct. &nbsp; <br>
+Buyer.cs file is used as the main app for making purchase.
