@@ -10,7 +10,7 @@ After bought all the things, they have to decide if they want to remove any of t
 
 ### Technical Part
 
-The Progarm.cs file was used to create a file with the available products. &nbsp;
+The Progarm.cs file was used to create a file with the available products. &nbsp; <br>
 Product class in an abstract class. &nbsp;
 DeviceProduct and CD_Product inherit the Product class. &nbsp;
 Movie and Game classes inherit the CD_Product. &nbsp;
