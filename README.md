@@ -14,4 +14,4 @@ The Progarm.cs file was used to create a file with the available products. &nbsp
 Product class in an abstract class. &nbsp;
 Device_Product and CD_Product inherit the Product class. &nbsp;
 Movie and Game classes inherit the CD_Product. &nbsp;
-Mobile_Phone and Caming_COnsole inherit the Device_Product.
+Mobile_Phone and Caming_COnsole inherit the DeviceProduct.
